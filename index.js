@@ -129,15 +129,7 @@ async function connectToWhatsApp() {
               }
             );
           } else {
-            await sock.sendMessage(
-              numberWa,
-              {
-                text: "Soy un robot",
-              },
-              {
-                quoted: messages[0],
-              }
-            );
+         
           }
         }
       }
@@ -165,7 +157,7 @@ app.get("/send-message", async (req, res) => {
         response: "El numero no existe",
       });
     } else {
-      numberWA = "591" + number + "@s.whatsapp.net";
+      numberWA = "972" + number + "@s.whatsapp.net";
    
       if (isConnected()) {
 
@@ -239,5 +231,7 @@ const updateQR = (data) => {
 
 connectToWhatsApp().catch((err) => console.log("unexpected error: " + err)); // catch any errors
 server.listen(port, () => {
-  console.log("Server Run Port : " + port);
+  console.log("Server Run Port  : " + port);
 });
+
+
