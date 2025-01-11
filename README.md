@@ -4,7 +4,7 @@
 
 # install project
 
-npm install || npm install --force
+ npm install --force
 
 # run project
 
